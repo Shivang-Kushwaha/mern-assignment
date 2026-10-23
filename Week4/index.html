@@ -11,6 +11,7 @@
     <meta property="og:description" content="Explore upcoming Campus Tech Club events and register to take part.">
     <meta property="og:type" content="website">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
     <title>Campus Tech Club | Events & Registration</title>
     <style>
         * {
@@ -237,15 +238,17 @@
         <div class="masthead">
             <p class="brand">CAMPUS / TECH CLUB</p>
             <nav aria-label="Main navigation">
-                <a href="#events">Events</a>
-                <a href="#register">Register</a>
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="register.html">Register</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
         <section class="intro" aria-labelledby="page-title">
             <p class="eyebrow">Build things. Meet people. Learn together.</p>
-            <h1 id="page-title">Ideas are better when we make them real.</h1>
+            <h1 id="page-title">Welcome to the Tech Club</h1>
             <p class="intro-copy">Join fellow students for hands-on sessions in web development, robotics, and creative
-                technology. Pick an event and save your spot.</p>
+                technology. Take a look at our upcoming events and join us.</p>
         </section>
     </header>
 
@@ -298,77 +301,6 @@
             </div>
         </section>
 
-        <section class="registration" id="register" aria-labelledby="register-heading">
-            <h2 class="section-heading" id="register-heading">Join an event</h2>
-            <p class="section-copy">Share your details and tell us what you would like to attend.</p>
-            <form action="#register" method="post">
-                <div class="form-grid">
-                    <div class="field">
-                        <label for="student-name">Shivang Kushwaha</label>
-                        <input type="text" id="student-name" name="student-name" autocomplete="name" required>
-                    </div>
-                    <div class="field">
-                        <label for="student-email">mr.shivangkushwaha@gmail.com</label>
-                        <input type="email" id="student-email" name="student-email" autocomplete="email" required>
-                    </div>
-                    <div class="field">
-
-                        <label for="student-phone">7985462130</label>
-                        <input type="tel" id="student-phone" name="student-phone" autocomplete="tel" required>
-                    </div>
-                    <div class="field">
-                        <label for="event-date">Event date</label>
-                        <input type="date" id="event-date" name="event-date" required>
-                    </div>
-                    <div class="field">
-                        <label for="student-password">Password</label>
-                        <input type="password" id="student-password" name="student-password" autocomplete="new-password"
-                            required>
-                    </div>
-                    <div class="field">
-                        <label for="student-id">Student ID</label>
-                        <input type="text" id="student-id" name="student-id" required>
-                    </div>
-                    <div class="field">
-                        <label for="study-year">2026-27</label>
-                        <select id="study-year" name="study-year" required>
-                            <option value="" selected disabled>Select your year</option>
-                            <option value="1">2026-27</option>
-                            <option value="2">2027-28</option>
-                            <option value="3">2028-29</option>
-                            <option value="4">2029-30 or above</option>
-                        </select>
-                    </div>
-                    <fieldset class="field field-full">
-                        <legend>Choose an event</legend>
-                        <div class="choice-list">
-                            <label class="choice"><input type="checkbox" name="events" value="web-page"> Web page
-                                workshop</label>
-                            <label class="choice"><input type="checkbox" name="events" value="robotics"> Robotics
-                                session</label>
-                            <label class="choice"><input type="checkbox" name="events" value="show-and-tell"> Project
-                                show &amp; tell</label>
-                        </div>
-                    </fieldset>
-                    <fieldset class="field field-full">
-                        <legend>How will you attend?</legend>
-                        <div class="choice-list">
-                            <label class="choice"><input type="radio" name="attendance" value="in-person" required> In
-                                person</label>
-                            <label class="choice"><input type="radio" name="attendance" value="online"> Online</label>
-                        </div>
-                    </fieldset>
-                    <div class="field field-full">
-                        <label for="interests">What would you like to learn or build?</label>
-                        <textarea id="interests" name="interests" rows="4"
-                            placeholder="Tell us a little about your interests..."></textarea>
-                    </div>
-                    <label class="choice field-full"><input type="checkbox" name="updates" value="yes"> Send me updates
-                        about future club events</label>
-                </div>
-                <button type="submit">Submit registration</button>
-            </form>
-        </section>
     </main>
 
     <footer>

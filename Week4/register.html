@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for Campus Tech Club events.">
+    <meta name="author" content="Campus Tech Club">
+    <meta name="theme-color" content="#172d2b">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>Register | Campus Tech Club</title>
+</head>
+<body>
+    <header>
+        <div class="masthead">
+            <p class="brand">CAMPUS / TECH CLUB</p>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="register.html" aria-current="page">Register</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <section class="intro" aria-labelledby="page-title">
+            <p class="eyebrow">Save your spot</p>
+            <h1 id="page-title">Join an event</h1>
+            <p class="intro-copy">Tell us a little about yourself and choose the events you would like to attend.</p>
+        </section>
+    </header>
+    <main>
+        <section aria-labelledby="register-heading">
+            <h2 class="section-heading" id="register-heading">Student registration</h2>
+            <form action="#register-heading" method="post">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="student-name">Full name</label>
+                        <input type="text" id="student-name" name="student-name" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="student-email">Email</label>
+                        <input type="email" id="student-email" name="student-email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="student-phone">Phone</label>
+                        <input type="tel" id="student-phone" name="student-phone" autocomplete="tel" required>
+                    </div>
+                    <div class="field">
+                        <label for="event-date">Event date</label>
+                        <input type="date" id="event-date" name="event-date" required>
+                    </div>
+                    <div class="field">
+                        <label for="student-password">Password</label>
+                        <input type="password" id="student-password" name="student-password" autocomplete="new-password" required>
+                    </div>
+                    <div class="field">
+                        <label for="student-id">Student ID</label>
+                        <input type="text" id="student-id" name="student-id" required>
+                    </div>
+                    <div class="field">
+                        <label for="study-year">Year of study</label>
+                        <select id="study-year" name="study-year" required>
+                            <option value="" selected disabled>Select your year</option>
+                            <option value="1">Year 1</option>
+                            <option value="2">Year 2</option>
+                            <option value="3">Year 3</option>
+                            <option value="4">Year 4 or above</option>
+                        </select>
+                    </div>
+                    <fieldset class="field field-full">
+                        <legend>Choose an event</legend>
+                        <div class="choice-list">
+                            <label class="choice"><input type="checkbox" name="events" value="web-page"> Web page workshop</label>
+                            <label class="choice"><input type="checkbox" name="events" value="robotics"> Robotics session</label>
+                            <label class="choice"><input type="checkbox" name="events" value="show-and-tell"> Project show and tell</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field field-full">
+                        <legend>How will you attend?</legend>
+                        <div class="choice-list">
+                            <label class="choice"><input type="radio" name="attendance" value="in-person" required> In person</label>
+                            <label class="choice"><input type="radio" name="attendance" value="online"> Online</label>
+                        </div>
+                    </fieldset>
+                    <div class="field field-full">
+                        <label for="interests">Message</label>
+                        <textarea id="interests" name="interests" rows="4" placeholder="Tell us what you are interested in..."></textarea>
+                    </div>
+                    <label class="choice field-full"><input type="checkbox" name="updates" value="yes"> Send me updates about future club events</label>
+                </div>
+                <button type="submit">Submit registration</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Campus Tech Club · Learn by making.</p>
+    </footer>
+</body>
+</html>
