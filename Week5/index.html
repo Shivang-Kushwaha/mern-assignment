@@ -19,6 +19,15 @@
 	--white: #fffefa;
 	--accent: #df7356;
 	--border-color: #d4ddd2;
+	--space-small: 10px;
+	--space-medium: 12px;
+	--space-normal: 20px;
+	--space-large: 30px;
+	--space-xlarge: 40px;
+	--space-hero: 55px;
+	--space-copy: 15px;
+	--page-gutter: 8%;
+	--content-gutter: 20px;
 }
 
 * {
@@ -35,7 +44,7 @@ body {
 }
 
 .masthead {
-	padding: 18px 8%;
+	padding: var(--space-normal) var(--page-gutter);
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--dark-green);
@@ -54,7 +63,7 @@ body {
 
 nav {
 	display: flex;
-	gap: 20px;
+	gap: var(--space-normal);
 }
 
 nav a {
@@ -66,12 +75,12 @@ nav a[aria-current="page"] {
 }
 
 #hero {
-	padding: 55px 8%;
+	padding: var(--space-hero) var(--page-gutter);
 	background-color: var(--light-green);
 }
 
 .eyebrow {
-	margin-bottom: 10px;
+	margin-bottom: var(--space-small);
 	color: var(--dark-green);
 	font-size: 14px;
 	font-weight: bold;
@@ -94,13 +103,13 @@ h2 {
 
 .hero-copy {
 	max-width: 600px;
-	margin: 15px 0;
+	margin: var(--space-copy) 0;
 	color: var(--muted-color);
 }
 
 .button-link {
 	display: inline-block;
-	padding: 12px 18px;
+	padding: var(--space-medium) var(--space-normal);
 	background-color: var(--accent);
 	color: var(--white);
 	font-weight: bold;
@@ -110,11 +119,11 @@ h2 {
 main {
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 40px 20px;
+	padding: var(--space-xlarge) var(--content-gutter);
 }
 
 .section-intro {
-	margin-bottom: 20px;
+	margin-bottom: var(--space-normal);
 }
 
 .table-wrap {
@@ -122,7 +131,7 @@ main {
 }
 
 .card {
-	padding: 12px;
+	padding: var(--space-medium);
 	border: 1px solid var(--border-color);
 	background-color: var(--white);
 }
@@ -135,12 +144,12 @@ table {
 }
 
 caption {
-	padding: 10px 0;
+	padding: var(--space-small) 0;
 	text-align: left;
 }
 
 th, td {
-	padding: 12px;
+	padding: var(--space-medium);
 	border-bottom: 1px solid var(--border-color);
 }
 
@@ -154,14 +163,14 @@ tfoot {
 }
 
 .about-section {
-	margin-top: 30px;
-	padding: 20px;
+	margin-top: var(--space-large);
+	padding: var(--space-normal);
 	background-color: var(--dark-green);
 	color: var(--white);
 }
 
 footer {
-	padding: 20px;
+	padding: var(--space-normal);
 	background-color: var(--dark-green);
 	color: var(--white);
 	text-align: center;
@@ -173,7 +182,7 @@ footer {
 	}
 
 	nav {
-		margin-top: 12px;
+		margin-top: var(--space-medium);
 	}
 
 	h1 {
