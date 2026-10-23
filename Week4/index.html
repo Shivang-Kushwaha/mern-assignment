@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore upcoming Campus Tech Club events and register to take part.">
+    <meta name="theme-color" content="#172d2b">
+    <title>Campus Tech Club | Events & Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0 auto;
+            background-color: #f4f5f1;
+            color: #24352f;
+            font-family: Verdana, sans-serif;
+            line-height: 1.5;
+        }
+
+        .masthead {
+            padding: 18px 8%;
+            background-color: #24352f;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .intro {
+            padding: 55px 8%;
+            background-color: #dce8d8;
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: #52734d;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: Georgia, serif;
+            font-size: 48px;
+        }
+
+        .intro-copy {
+            max-width: 600px;
+            margin-top: 15px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-heading {
+            margin-bottom: 8px;
+            font-family: Georgia, serif;
+            font-size: 30px;
+        }
+
+        .section-copy {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #59645e;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            text-align: left;
+        }
+
+        caption {
+            padding: 10px 0;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #cbd2ca;
+        }
+
+        thead {
+            background-color: #e3e9e1;
+        }
+
+        tfoot {
+            color: #59645e;
+        }
+
+        .registration {
+            margin-top: 50px;
+        }
+
+        form {
+            padding: 25px;
+            border: 1px solid #cbd2ca;
+            background-color: white;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field-full {
+            grid-column: 1 / 3;
+        }
+
+        label, legend {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #9ba9a0;
+            border-radius: 4px;
+            background: white;
+            font-family: inherit;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 100px;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .choice-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .choice {
+            display: inline-flex;
+            align-items: center;
+            font-weight: normal;
+        }
+
+        .choice input {
+            width: auto;
+            margin-right: 7px;
+            padding: 0;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: 0;
+            border-radius: 4px;
+            background-color: #24352f;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #52734d;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #24352f;
+            color: white;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .masthead {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .field-full {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="masthead">
+            <p class="brand">CAMPUS / TECH CLUB</p>
+            <nav aria-label="Main navigation">
+                <a href="#events">Events</a>
+                <a href="#register">Register</a>
+            </nav>
+        </div>
+        <section class="intro" aria-labelledby="page-title">
+            <p class="eyebrow">Build things. Meet people. Learn together.</p>
+            <h1 id="page-title">Ideas are better when we make them real.</h1>
+            <p class="intro-copy">Join fellow students for hands-on sessions in web development, robotics, and creative technology. Pick an event and save your spot.</p>
+        </section>
+    </header>
+
+    <main>
+        <section id="events" aria-labelledby="events-heading">
+            <h2 class="section-heading" id="events-heading">Upcoming events</h2>
+            <p class="section-copy">A few good reasons to get together this month.</p>
+            <div class="table-wrap">
+                <table>
+                    <caption>Campus Tech Club event schedule</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Event</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Build Your First Web Page</th>
+                            <td>Nov 7, 2026</td>
+                            <td>2:00 PM</td>
+                            <td>Design Lab 104</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Robotics Taster Session</th>
+                            <td>Nov 14, 2026</td>
+                            <td>1:00 PM</td>
+                            <td>Engineering Hall</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Student Project Show &amp; Tell</th>
+                            <td>Nov 21, 2026</td>
+                            <td>3:30 PM</td>
+                            <td>Library Studio</td>
+                            <td>Free</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">All students are welcome. Bring your curiosity; no experience is needed.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section class="registration" id="register" aria-labelledby="register-heading">
+            <h2 class="section-heading" id="register-heading">Join an event</h2>
+            <p class="section-copy">Share your details and tell us what you would like to attend.</p>
+            <form action="#register" method="post">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="student-name">Full name</label>
+                        <input type="text" id="student-name" name="student-name" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="student-email">Student email</label>
+                        <input type="email" id="student-email" name="student-email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="student-password">Password</label>
+                        <input type="password" id="student-password" name="student-password" autocomplete="new-password" required>
+                    </div>
+                    <div class="field">
+                        <label for="student-id">Student ID</label>
+                        <input type="text" id="student-id" name="student-id" required>
+                    </div>
+                    <div class="field">
+                        <label for="study-year">Year of study</label>
+                        <select id="study-year" name="study-year" required>
+                            <option value="" selected disabled>Select your year</option>
+                            <option value="1">Year 1</option>
+                            <option value="2">Year 2</option>
+                            <option value="3">Year 3</option>
+                            <option value="4">Year 4 or above</option>
+                        </select>
+                    </div>
+                    <fieldset class="field field-full">
+                        <legend>Choose an event</legend>
+                        <div class="choice-list">
+                            <label class="choice"><input type="checkbox" name="events" value="web-page"> Web page workshop</label>
+                            <label class="choice"><input type="checkbox" name="events" value="robotics"> Robotics session</label>
+                            <label class="choice"><input type="checkbox" name="events" value="show-and-tell"> Project show &amp; tell</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="field field-full">
+                        <legend>How will you attend?</legend>
+                        <div class="choice-list">
+                            <label class="choice"><input type="radio" name="attendance" value="in-person" required> In person</label>
+                            <label class="choice"><input type="radio" name="attendance" value="online"> Online</label>
+                        </div>
+                    </fieldset>
+                    <div class="field field-full">
+                        <label for="interests">What would you like to learn or build?</label>
+                        <textarea id="interests" name="interests" rows="4" placeholder="Tell us a little about your interests..."></textarea>
+                    </div>
+                    <label class="choice field-full"><input type="checkbox" name="updates" value="yes"> Send me updates about future club events</label>
+                </div>
+                <button type="submit">Submit registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Campus Tech Club · Learn by making.</p>
+    </footer>
+</body>
+</html>
