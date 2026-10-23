@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore upcoming events from the Campus Tech Club.">
+	<meta name="author" content="Campus Tech Club">
+	<link rel="icon" type="image/svg+xml" href="../Week4/favicon.svg">
+	<style>
+:root {
+	--dark-green: #234238;
+	--light-green: #dce8d8;
+	--page-color: #f3f5ef;
+	--text-color: #1d3028;
+	--muted-color: #647168;
+	--white: #fffefa;
+	--accent: #df7356;
+	--border-color: #d4ddd2;
+}
+
+body {
+	margin: 0;
+	background-color: var(--page-color);
+	color: var(--text-color);
+	font-family: Verdana, sans-serif;
+	line-height: 1.5;
+}
+
+.masthead {
+	padding: 18px 8%;
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--dark-green);
+	color: var(--white);
+}
+
+.brand {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.brand-mark {
+	color: var(--accent);
+	font-weight: bold;
+}
+
+nav {
+	display: flex;
+	gap: 20px;
+}
+
+nav a {
+	color: var(--white);
+}
+
+nav a[aria-current="page"] {
+	color: var(--light-green);
+}
+
+.hero {
+	padding: 55px 8%;
+	background-color: var(--light-green);
+}
+
+.eyebrow {
+	margin-bottom: 10px;
+	color: var(--dark-green);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h1, h2 {
+	font-family: Georgia, serif;
+}
+
+h1 {
+	margin: 0;
+	font-size: 48px;
+}
+
+.hero-copy {
+	max-width: 600px;
+	margin: 15px 0;
+	color: var(--muted-color);
+}
+
+.button-link {
+	display: inline-block;
+	padding: 12px 18px;
+	background-color: var(--accent);
+	color: var(--white);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.section-intro {
+	margin-bottom: 20px;
+}
+
+.table-wrap {
+	overflow-x: auto;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--white);
+	text-align: left;
+}
+
+caption {
+	padding: 10px 0;
+	text-align: left;
+}
+
+th, td {
+	padding: 12px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+thead {
+	background-color: var(--dark-green);
+	color: var(--white);
+}
+
+tfoot {
+	background-color: var(--light-green);
+}
+
+.about-section {
+	margin-top: 30px;
+	padding: 20px;
+	background-color: var(--dark-green);
+	color: var(--white);
+}
+
+footer {
+	padding: 20px;
+	background-color: var(--dark-green);
+	color: var(--white);
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.masthead {
+		flex-direction: column;
+	}
+
+	nav {
+		margin-top: 12px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+}
+	</style>
+	<title>Campus Tech Club | Events</title>
+</head>
+<body>
+	<header id="home">
+		<div class="masthead">
+			<a class="brand" href="#home" aria-label="Campus Tech Club home">
+				<span class="brand-mark" aria-hidden="true">C</span>
+				<span>Campus Tech Club</span>
+			</a>
+			<nav aria-label="Main navigation">
+				<a href="#home" aria-current="page">Home</a>
+				<a href="#events">Events</a>
+				<a href="#about">About</a>
+			</nav>
+		</div>
+		<section class="hero" aria-labelledby="page-title">
+			<div class="hero-content">
+				<p class="eyebrow">Student-run · Beginner-friendly · Hands-on</p>
+				<h1 id="page-title">Make something real.</h1>
+				<p class="hero-copy">Learn web development, try robotics, and share what you build with a community of curious students.</p>
+				<a class="button-link" href="#events">Explore upcoming events</a>
+			</div>
+			<p class="hero-note"><span>01</span> Learn together. Build at your own pace.</p>
+		</section>
+	</header>
+
+	<main>
+		<section id="events" class="events-section" aria-labelledby="events-heading">
+			<div class="section-intro">
+				<p class="eyebrow">On the calendar</p>
+				<h2 id="events-heading">Upcoming events</h2>
+				<p>Pick a session, bring your curiosity, and meet the club.</p>
+			</div>
+			<div class="table-wrap">
+				<table>
+					<caption>Campus Tech Club event schedule</caption>
+					<thead>
+						<tr>
+							<th scope="col">Event</th>
+							<th scope="col">Date</th>
+							<th scope="col">Time</th>
+							<th scope="col">Location</th>
+							<th scope="col">Cost</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Build Your First Web Page</th>
+							<td>Nov 7, 2026</td>
+							<td>2:00 PM</td>
+							<td>Design Lab 104</td>
+							<td>Free</td>
+						</tr>
+						<tr>
+							<th scope="row">Robotics Taster Session</th>
+							<td>Nov 14, 2026</td>
+							<td>1:00 PM</td>
+							<td>Engineering Hall</td>
+							<td>Free</td>
+						</tr>
+						<tr>
+							<th scope="row">Student Project Show &amp; Tell</th>
+							<td>Nov 21, 2026</td>
+							<td>3:30 PM</td>
+							<td>Library Studio</td>
+							<td>Free</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="5">Everyone is welcome. No previous experience is needed.</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</section>
+
+		<section id="about" class="about-section" aria-labelledby="about-heading">
+			<div>
+				<p class="eyebrow">A club for curious minds</p>
+				<h2 id="about-heading">Start where you are.</h2>
+			</div>
+			<p>Our meetups are a place to practice new skills, ask questions, and make projects with other students. You do not need to know everything before you begin.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>Campus Tech Club <span aria-hidden="true">·</span> Learn by making.</p>
+		<a href="#home">Back to top</a>
+	</footer>
+</body>
+</html>
