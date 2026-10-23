@@ -6,33 +6,42 @@
     <title>Document</title>
 </head>
 <body>
-  <header> All About me</header>
+    <header>
+        <h1>All About me</h1>
+    </header>
   <nav aria-label="main navigation">
-    <a href ="about.html"> About</a>
-    <br>
-    <a   href="google.com" target="_blank"> Google external website</a>
+        <a href="about.html">About</a>
   </nav>
-  <img src="https://pixabay.com/images/download/x-2178507_1920.jpg"
-   alt="Profile Picture">
-   <img src=""https://pixabay.com/images/download/x-2178303_1920.jpg"  alt="profile image 2"
-<h3> Current Course</h3>
-<ul>
-    <li>
-        <strong>Mern sTACK dEVELOPMENT</strong>
-        <UL>
-            <LI>MONGO DB</LI>
-            <LI> EXPRESS JS</LI>
-            <LI>REACT JS</LI>
-            <LI> NODE JS</LI>
-        </UL>
-    </li>
-    <LI>
-        <STRONG> VERSION CONTROL SYSTEM</STRONG>
-        <UL>
-            <LI> GIT COMMAND</LI>
-            <LI> GIT REPOSTRIES</LI>
-        </UL>
-    </LI>
-</ul>
+    <main>
+        <section aria-label="Profile">
+            <img src="https://pixabay.com/images/download/x-2178507_1920.jpg" alt="Profile Picture">
+            <img src="https://pixabay.com/images/download/x-2178303_1920.jpg" alt="Profile image 2">
+        </section>
+        <section aria-labelledby="courses-heading">
+            <h2 id="courses-heading">Current Course</h2>
+            <article>
+                <h3>MERN Stack Development</h3>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>Express.js</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Version Control System</h3>
+                <ul>
+                    <li>Git commands</li>
+                    <li>Git repositories</li>
+                </ul>
+            </article>
+        </section>
+        <aside aria-label="External resource">
+            <a href="https://google.com" target="_blank" rel="noopener noreferrer">Google external website</a>
+        </aside>
+    </main>
+    <footer>
+        <p>All About me</p>
+    </footer>
 </body>
 </html>
